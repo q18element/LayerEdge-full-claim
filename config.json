@@ -1,0 +1,52 @@
+{
+  "api": {
+    "baseUrl": "https://airdrop.layeredge.foundation/api/eligibility",
+    "maxRetries": 1000000,
+    "retryDelay": 100,
+    "timeout": 30000
+  },
+  "files": {
+    "addressesFile": "addresses.txt",
+    "proxiesFile": "proxy.txt",
+    "outputFile": "results.csv",
+    "logFile": "allocation_checker.log",
+    "seedPhrasesFile": "seedphrases.txt",
+    "cexOutputFile": "cex_results.csv",
+    "claimOutputFile": "claim_results.csv",
+    "consolidateOutputFile": "consolidate_results.csv"
+  },
+  "processing": {
+    "batchSize": 1000,
+    "maxConcurrent": 1000,
+    "proxyRotation": true,
+    "skipExisting": true,
+    "delayBetweenRequests": 1000,
+    "delayBetweenBatches": 2000
+  },
+  "headers": {
+    "accept": "application/json, text/plain, */*",
+    "accept-language": "en-US,en;q=0.9,vi;q=0.8",
+    "accept-encoding": "gzip, deflate, br",
+    "cache-control": "no-cache",
+    "clq-app-id": "layeredge",
+    "origin": "https://airdrop.layeredge.foundation",
+    "referer": "https://airdrop.layeredge.foundation/flow",
+    "sec-ch-ua": "\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A/Brand\";v=\"99\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-origin",
+    "request-id": "|e528b5e916df46dfb70f32c372bbeb36.6f4051a93e8d4393",
+    "traceparent": "00-e528b5e916df46dfb70f32c372bbeb36-6f4051a93e8d4393-01",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+  },
+  "cexInfo": {
+    "platform": "gate",
+    "depositAddress": "",
+    "userId": ""
+  },
+  "consolidate": {
+    "targetAddress": ""
+  }
+}
